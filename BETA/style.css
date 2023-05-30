@@ -1,0 +1,66 @@
+/*! CSS Used from: https://store.lunarclient.com/templateassets/b7c1d3c0-3e92-40ad-9c1e-8fc303074df8/css/bootstrap.min.css */
+*,::after,::before{box-sizing:border-box;}
+section{display:block;}
+h1,h3,h5{margin-top:0;margin-bottom:.5rem;}
+a{color:#007bff;text-decoration:none;background-color:transparent;}
+a:hover{color:#0056b3;text-decoration:underline;}
+img{vertical-align:middle;border-style:none;}
+h1,h3,h5{margin-bottom:.5rem;font-weight:500;line-height:1.2;}
+h1{font-size:2.5rem;}
+h3{font-size:1.75rem;}
+h5{font-size:1.25rem;}
+@media print{
+*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+a:not(.btn){text-decoration:underline;}
+img{page-break-inside:avoid;}
+h3{orphans:3;widows:3;}
+h3{page-break-after:avoid;}
+}
+/*! CSS Used from: https://store.lunarclient.com/templateassets/b7c1d3c0-3e92-40ad-9c1e-8fc303074df8/css/main.css */
+span{font-weight:bolder;}
+h1{font-weight:100;}
+.theme-light ::selection{background-color:#3692ED;}
+.no-drag{user-select:none;-moz-user-select:none;-webkit-user-drag:none;-webkit-user-select:none;-ms-user-select:none;}
+#header{display:flex;justify-content:center;align-items:center;background-position:center;background-size:cover;background-repeat:no-repeat;overflow:hidden;box-shadow:none;height:550px;z-index:3;padding-top:100px;}
+#header>#inner-header{padding:3rem 20px;color:#fff;text-align:center;z-index:3;}
+#header>#inner-header>#header-topline{letter-spacing:7px;font-style:italic;text-transform:uppercase;margin-bottom:5px;}
+#header>#inner-header>#header-title{text-transform:uppercase;font-weight:400;font-size:clamp(2.5rem, 5vw, 5rem);text-shadow:0px 3px 0px rgba(0,0,0,0.25);}
+.theme-light #header>#inner-header>#header-title{font-family:"Panton",sans-serif;}
+#header>#inner-header>#header-subtitle{font-weight:200;font-size:clamp(1.1rem, 1.5vw, 1.25rem);letter-spacing:0.75px;}
+#header>#inner-header>#header-subtitle>a{color:white;padding-right:15px;transition:all 1s;}
+#header>#inner-header>#header-subtitle>a:hover{color:rgba(255,255,255,0.8);opacity:0.8;text-decoration:none;}
+#header>#inner-header>#header-subtitle>a:last-child{padding-right:0px;}
+#header>#inner-header>#header-subtitle>a>i{font-size:2rem;}
+@media (max-width: 600px){
+#header>#inner-header>#header-subtitle>a>i{font-size:1.5rem;}
+}
+@media screen and (min-width: 400px){
+#header>#inner-header>#header-subtitle:not(.no-pad):not([data-variant="impact"]){display:inline-block;max-width:725px;}
+}
+#header[data-variant="store-partner"]>img{max-width:150px;max-height:150px;border-radius:150px;margin-right:20px;display:block;}
+#header[data-variant="store-partner"]>#inner-header{text-align:left;}
+@media screen and (max-width: 600px){
+#header[data-variant="store-partner"]>#inner-header{text-align:center;}
+}
+@media screen and (max-width: 600px){
+#header[data-variant="store-partner"]{flex-direction:column;}
+#header[data-variant="store-partner"]>img{margin-right:0px!important;margin-bottom:-25px;}
+}
+/*! CSS Used from: Embedded ; media=all */
+@media all{
+.fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;}
+.fa-tiktok:before{content:"\e07b";}
+.fa-twitch:before{content:"\f1e8";}
+.fa-twitter:before{content:"\f099";}
+.fa-youtube:before{content:"\f167";}
+.fab{font-family:"Font Awesome 5 Brands";}
+.fab{font-weight:400;}
+}
+/*! CSS Used from: Embedded */
+*{scroll-behavior:smooth;}
+/*! CSS Used fontfaces */
+@font-face{font-family:'Panton';font-style:italic;font-weight:400;src:local('Panton'), url('https://store.lunarclient.com/templateassets/b7c1d3c0-3e92-40ad-9c1e-8fc303074df8/fonts/Panton-BlackitalicCaps.woff2') format('woff');font-display:swap;}
+@font-face{font-family:'Panton';font-style:normal;font-weight:290;src:local('Panton'), url('https://store.lunarclient.com/templateassets/b7c1d3c0-3e92-40ad-9c1e-8fc303074df8/fonts/Panton-LightCaps.woff2') format('woff');font-display:swap;}
+@font-face{font-family:'Panton';font-style:italic;font-weight:300;src:local('Panton'), url('https://store.lunarclient.com/templateassets/b7c1d3c0-3e92-40ad-9c1e-8fc303074df8/fonts/Panton-LightitalicCaps.woff2') format('woff');font-display:swap;}
+@font-face{font-family:'Panton';font-style:normal;font-weight:390;src:local('Panton'), url('https://store.lunarclient.com/templateassets/b7c1d3c0-3e92-40ad-9c1e-8fc303074df8/fonts/Panton-BlackCaps.woff2') format('woff');font-display:swap;}
+@font-face{font-family:"Font Awesome 5 Brands";font-style:normal;font-weight:400;font-display:block;src:url(https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-brands-400.eot);src:url(https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-brands-400.eot?#iefix) format("embedded-opentype"),url(https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-brands-400.woff2) format("woff2"),url(https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-brands-400.woff) format("woff"),url(https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-brands-400.ttf) format("truetype"),url(https://ka-f.fontawesome.com/releases/v5.15.3/webfonts/free-fa-brands-400.svg#fontawesome) format("svg");}
